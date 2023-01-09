@@ -10,3 +10,9 @@
   background-size: cover;
   background-position: center;
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
