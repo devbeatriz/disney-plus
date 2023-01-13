@@ -1,7 +1,11 @@
-fetch('https://api.themoviedb.org/3/movie/tt12801262?api_key=c6a74ef24b19ca63023bc187a38cbc89&language=pt-br')
-.then(response => response.json())
-.then(data => {
-  console.log(data)
+const API_KEY = 'c6a74ef24b19ca63023bc187a38cbc89'
+const API_LANGUAGE = 'pt-br'
+
+function getUrlMovie(movieId) {
+  return `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}&language=${API_LANGUAGE}`
+}
+
+fetch(getUrlMovie('tt12801262')).then(response => response.json()).then(data => {console.log(data)
   const app = document.getElementById('app')
 
   const title = document.querySelector('.movie h1')
