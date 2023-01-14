@@ -1,7 +1,7 @@
 const API_KEY = 'c6a74ef24b19ca63023bc187a38cbc89'
 const API_LANGUAGE = 'pt-br'
 const BASE_URL_IMAGE = 'https://image.tmdb.org/t/p/original'
-const LIST_MOVIES = ['tt4823776', 'tt12801262', 'tt2096673', 'tt5109280', 'tt7146812', 'tt2948372', 'tt2953050', 'tt3521164', 'tt2380307', 'tt8097030']
+const LIST_MOVIES = ['tt8097030', 'tt4823776', 'tt3521164', 'tt2953050', 'tt7146812', 'tt2380307']
 
 const moviesList = document.getElementById('movies__list')
 
