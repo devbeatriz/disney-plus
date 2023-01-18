@@ -11,7 +11,7 @@ function getUrlMovie(movieId) {
 
 function setMainMovie(movieId) {
   fetch(getUrlMovie(movieId)).then(response => response.json()).then(data => {console.log(data)
-    const app = document.getElementById('app')
+    const appImage = document.querySelector('.app__image img')
   
     const title = document.querySelector('.movie h1')
     const description = document.querySelector('.movie p')
@@ -26,7 +26,8 @@ function setMainMovie(movieId) {
     info. innerHTML = yearRelease + ' - ' + data.genres[0].name + ' - Movie '
   
   const image = BASE_URL_IMAGE.concat(data.backdrop_path)
-  app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`
+  appImage.setAttribute('src', image)
+    // app.style.backgroundImage = `linear-gradient(90.18deg, rgba(13, 22, 46, 0.7) 23.21%, rgba(13, 22, 46, 0.0001) 96.69%), url('${image}')`
   })
 }
 
