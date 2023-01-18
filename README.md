@@ -16,7 +16,7 @@
 ![disney plus](https://user-images.githubusercontent.com/94017930/212501784-f32a8fae-53e9-4e16-8ac3-599d44676f7d.PNG)
 </p>
 
-<p align="center"><a href="https://disneyplaus-db.vercel.app/">Clique aqui</a> para ver o projeto.</p>
+<p align="center"><a href="https://disneyplus-db.vercel.app/">Clique aqui</a> para ver o projeto.</p>
 
 ## 💻 Projeto
 
